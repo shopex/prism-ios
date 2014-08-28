@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB81385919ADAC7500788C99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81385819ADAC7500788C99 /* Foundation.framework */; };
+		CB81386719ADAC7500788C99 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81386619ADAC7500788C99 /* XCTest.framework */; };
+		CB81386819ADAC7500788C99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81385819ADAC7500788C99 /* Foundation.framework */; };
+		CB81386A19ADAC7500788C99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81386919ADAC7500788C99 /* UIKit.framework */; };
+		CB81386D19ADAC7500788C99 /* libPrismIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB81385519ADAC7500788C99 /* libPrismIOS.a */; };
+		CB81387319ADAC7500788C99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB81387119ADAC7500788C99 /* InfoPlist.strings */; };
+		CB81387519ADAC7500788C99 /* PrismIOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB81387419ADAC7500788C99 /* PrismIOSTests.m */; };
+		CB81388019ADACDE00788C99 /* PIHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CB81387F19ADACDE00788C99 /* PIHttpRequest.m */; };
+		CB81388319ADB88900788C99 /* PrismClient.m in Sources */ = {isa = PBXBuildFile; fileRef = CB81388219ADB88900788C99 /* PrismClient.m */; };
+		CB81388619ADBA3400788C99 /* PrismResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = CB81388519ADBA3400788C99 /* PrismResponse.m */; };
+		CB81388919ADC3D700788C99 /* PrismTool.m in Sources */ = {isa = PBXBuildFile; fileRef = CB81388819ADC3D700788C99 /* PrismTool.m */; };
+		CBC73EFD19ADE0EA00DE1B7A /* PrismClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = CB81388119ADB88900788C99 /* PrismClient.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB81386B19ADAC7500788C99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB81384D19ADAC7500788C99 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB81385419ADAC7500788C99;
+			remoteInfo = PrismIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB81385319ADAC7500788C99 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				CBC73EFD19ADE0EA00DE1B7A /* PrismClient.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CB81385519ADAC7500788C99 /* libPrismIOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPrismIOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB81385819ADAC7500788C99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CB81385C19ADAC7500788C99 /* PrismIOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PrismIOS-Prefix.pch"; sourceTree = "<group>"; };
+		CB81386519ADAC7500788C99 /* PrismIOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PrismIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB81386619ADAC7500788C99 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CB81386919ADAC7500788C99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CB81387019ADAC7500788C99 /* PrismIOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PrismIOSTests-Info.plist"; sourceTree = "<group>"; };
+		CB81387219ADAC7500788C99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB81387419ADAC7500788C99 /* PrismIOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PrismIOSTests.m; sourceTree = "<group>"; };
+		CB81387E19ADACDE00788C99 /* PIHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIHttpRequest.h; sourceTree = "<group>"; };
+		CB81387F19ADACDE00788C99 /* PIHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PIHttpRequest.m; sourceTree = "<group>"; };
+		CB81388119ADB88900788C99 /* PrismClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismClient.h; sourceTree = "<group>"; };
+		CB81388219ADB88900788C99 /* PrismClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrismClient.m; sourceTree = "<group>"; };
+		CB81388419ADBA3400788C99 /* PrismResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismResponse.h; sourceTree = "<group>"; };
+		CB81388519ADBA3400788C99 /* PrismResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrismResponse.m; sourceTree = "<group>"; };
+		CB81388719ADC3D700788C99 /* PrismTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismTool.h; sourceTree = "<group>"; };
+		CB81388819ADC3D700788C99 /* PrismTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrismTool.m; sourceTree = "<group>"; };
+		CB81388A19ADCA9B00788C99 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		CBFB283619AF036400F3EA73 /* PrismRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismRequestDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB81385219ADAC7500788C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB81385919ADAC7500788C99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB81386219ADAC7500788C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB81386719ADAC7500788C99 /* XCTest.framework in Frameworks */,
+				CB81386D19ADAC7500788C99 /* libPrismIOS.a in Frameworks */,
+				CB81386A19ADAC7500788C99 /* UIKit.framework in Frameworks */,
+				CB81386819ADAC7500788C99 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB81384C19ADAC7500788C99 = {
+			isa = PBXGroup;
+			children = (
+				CB81385A19ADAC7500788C99 /* PrismIOS */,
+				CB81386E19ADAC7500788C99 /* PrismIOSTests */,
+				CB81385719ADAC7500788C99 /* Frameworks */,
+				CB81385619ADAC7500788C99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB81385619ADAC7500788C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB81385519ADAC7500788C99 /* libPrismIOS.a */,
+				CB81386519ADAC7500788C99 /* PrismIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB81385719ADAC7500788C99 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB81385819ADAC7500788C99 /* Foundation.framework */,
+				CB81386619ADAC7500788C99 /* XCTest.framework */,
+				CB81386919ADAC7500788C99 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB81385A19ADAC7500788C99 /* PrismIOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB27EB19AEE13E00F3EA73 /* Detail */,
+				CB81388119ADB88900788C99 /* PrismClient.h */,
+				CB81388219ADB88900788C99 /* PrismClient.m */,
+				CB81388419ADBA3400788C99 /* PrismResponse.h */,
+				CB81388519ADBA3400788C99 /* PrismResponse.m */,
+				CBFB283619AF036400F3EA73 /* PrismRequestDelegate.h */,
+				CB81385B19ADAC7500788C99 /* Supporting Files */,
+			);
+			path = PrismIOS;
+			sourceTree = "<group>";
+		};
+		CB81385B19ADAC7500788C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB81385C19ADAC7500788C99 /* PrismIOS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB81386E19ADAC7500788C99 /* PrismIOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB81387419ADAC7500788C99 /* PrismIOSTests.m */,
+				CB81386F19ADAC7500788C99 /* Supporting Files */,
+			);
+			path = PrismIOSTests;
+			sourceTree = "<group>";
+		};
+		CB81386F19ADAC7500788C99 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB81387019ADAC7500788C99 /* PrismIOSTests-Info.plist */,
+				CB81387119ADAC7500788C99 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBFB27EB19AEE13E00F3EA73 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				CB81388719ADC3D700788C99 /* PrismTool.h */,
+				CB81388819ADC3D700788C99 /* PrismTool.m */,
+				CB81388A19ADCA9B00788C99 /* Constants.h */,
+				CB81387E19ADACDE00788C99 /* PIHttpRequest.h */,
+				CB81387F19ADACDE00788C99 /* PIHttpRequest.m */,
+			);
+			name = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB81385419ADAC7500788C99 /* PrismIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB81387819ADAC7500788C99 /* Build configuration list for PBXNativeTarget "PrismIOS" */;
+			buildPhases = (
+				CB81385119ADAC7500788C99 /* Sources */,
+				CB81385219ADAC7500788C99 /* Frameworks */,
+				CB81385319ADAC7500788C99 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrismIOS;
+			productName = PrismIOS;
+			productReference = CB81385519ADAC7500788C99 /* libPrismIOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CB81386419ADAC7500788C99 /* PrismIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB81387B19ADAC7500788C99 /* Build configuration list for PBXNativeTarget "PrismIOSTests" */;
+			buildPhases = (
+				CB81386119ADAC7500788C99 /* Sources */,
+				CB81386219ADAC7500788C99 /* Frameworks */,
+				CB81386319ADAC7500788C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB81386C19ADAC7500788C99 /* PBXTargetDependency */,
+			);
+			name = PrismIOSTests;
+			productName = PrismIOSTests;
+			productReference = CB81386519ADAC7500788C99 /* PrismIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB81384D19ADAC7500788C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+			};
+			buildConfigurationList = CB81385019ADAC7500788C99 /* Build configuration list for PBXProject "PrismIOS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CB81384C19ADAC7500788C99;
+			productRefGroup = CB81385619ADAC7500788C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB81385419ADAC7500788C99 /* PrismIOS */,
+				CB81386419ADAC7500788C99 /* PrismIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB81386319ADAC7500788C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB81387319ADAC7500788C99 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB81385119ADAC7500788C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB81388619ADBA3400788C99 /* PrismResponse.m in Sources */,
+				CB81388319ADB88900788C99 /* PrismClient.m in Sources */,
+				CB81388019ADACDE00788C99 /* PIHttpRequest.m in Sources */,
+				CB81388919ADC3D700788C99 /* PrismTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB81386119ADAC7500788C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB81387519ADAC7500788C99 /* PrismIOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB81386C19ADAC7500788C99 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB81385419ADAC7500788C99 /* PrismIOS */;
+			targetProxy = CB81386B19ADAC7500788C99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB81387119ADAC7500788C99 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB81387219ADAC7500788C99 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB81387619ADAC7500788C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CB81387719ADAC7500788C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB81387919ADAC7500788C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/PrismIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PrismIOS/PrismIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB81387A19ADAC7500788C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				DSTROOT = /tmp/PrismIOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PrismIOS/PrismIOS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		CB81387C19ADAC7500788C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PrismIOS/PrismIOS-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PrismIOSTests/PrismIOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CB81387D19ADAC7500788C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PrismIOS/PrismIOS-Prefix.pch";
+				INFOPLIST_FILE = "PrismIOSTests/PrismIOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB81385019ADAC7500788C99 /* Build configuration list for PBXProject "PrismIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB81387619ADAC7500788C99 /* Debug */,
+				CB81387719ADAC7500788C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB81387819ADAC7500788C99 /* Build configuration list for PBXNativeTarget "PrismIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB81387919ADAC7500788C99 /* Debug */,
+				CB81387A19ADAC7500788C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB81387B19ADAC7500788C99 /* Build configuration list for PBXNativeTarget "PrismIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB81387C19ADAC7500788C99 /* Debug */,
+				CB81387D19ADAC7500788C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB81384D19ADAC7500788C99 /* Project object */;
+}

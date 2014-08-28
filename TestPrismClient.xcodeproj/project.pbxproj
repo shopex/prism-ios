@@ -21,6 +21,8 @@
 		CBFB278119AED8C000F3EA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB276319AED8C000F3EA73 /* UIKit.framework */; };
 		CBFB278919AED8C000F3EA73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBFB278719AED8C000F3EA73 /* InfoPlist.strings */; };
 		CBFB278B19AED8C000F3EA73 /* TestPrismClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFB278A19AED8C000F3EA73 /* TestPrismClientTests.m */; };
+		CBFB283A19AF049100F3EA73 /* libPrismIOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB283919AF049100F3EA73 /* libPrismIOS.a */; };
+		CBFB289319AF06AA00F3EA73 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CBFB289219AF06AA00F3EA73 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,12 @@
 		CBFB278619AED8C000F3EA73 /* TestPrismClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestPrismClientTests-Info.plist"; sourceTree = "<group>"; };
 		CBFB278819AED8C000F3EA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CBFB278A19AED8C000F3EA73 /* TestPrismClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPrismClientTests.m; sourceTree = "<group>"; };
+		CBFB27E919AEE07000F3EA73 /* PrismClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismClient.h; sourceTree = "<group>"; };
+		CBFB283719AF045700F3EA73 /* PrismRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismRequestDelegate.h; sourceTree = "<group>"; };
+		CBFB283819AF046200F3EA73 /* PrismResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismResponse.h; sourceTree = "<group>"; };
+		CBFB283919AF049100F3EA73 /* libPrismIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrismIOS.a; sourceTree = "<group>"; };
+		CBFB287D19AF064C00F3EA73 /* PrismIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PrismIOS.xcodeproj; path = PrismIOS/PrismIOS.xcodeproj; sourceTree = "<group>"; };
+		CBFB289219AF06AA00F3EA73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBFB276219AED8C000F3EA73 /* CoreGraphics.framework in Frameworks */,
+				CBFB283A19AF049100F3EA73 /* libPrismIOS.a in Frameworks */,
 				CBFB276419AED8C000F3EA73 /* UIKit.framework in Frameworks */,
 				CBFB276019AED8C000F3EA73 /* Foundation.framework in Frameworks */,
 			);
@@ -112,6 +121,9 @@
 		CBFB276519AED8C000F3EA73 /* TestPrismClient */ = {
 			isa = PBXGroup;
 			children = (
+				CBFB289219AF06AA00F3EA73 /* README.md */,
+				CBFB286F19AF064100F3EA73 /* SDK */,
+				CBFB27E619AEE03F00F3EA73 /* PrismIOS */,
 				CBFB276E19AED8C000F3EA73 /* AppDelegate.h */,
 				CBFB276F19AED8C000F3EA73 /* AppDelegate.m */,
 				CBFB277119AED8C000F3EA73 /* Main.storyboard */,
@@ -150,6 +162,25 @@
 				CBFB278719AED8C000F3EA73 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBFB27E619AEE03F00F3EA73 /* PrismIOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB283919AF049100F3EA73 /* libPrismIOS.a */,
+				CBFB283819AF046200F3EA73 /* PrismResponse.h */,
+				CBFB27E919AEE07000F3EA73 /* PrismClient.h */,
+				CBFB283719AF045700F3EA73 /* PrismRequestDelegate.h */,
+			);
+			name = PrismIOS;
+			sourceTree = "<group>";
+		};
+		CBFB286F19AF064100F3EA73 /* SDK */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB287D19AF064C00F3EA73 /* PrismIOS.xcodeproj */,
+			);
+			name = SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +261,7 @@
 			files = (
 				CBFB277819AED8C000F3EA73 /* Images.xcassets in Resources */,
 				CBFB276A19AED8C000F3EA73 /* InfoPlist.strings in Resources */,
+				CBFB289319AF06AA00F3EA73 /* README.md in Resources */,
 				CBFB277319AED8C000F3EA73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -365,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -378,8 +410,23 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestPrismClient/TestPrismClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/TestPrismClient/PrismIOS/**",
+					/Users/SunSet/Desktop/TestPrismClient/TestPrismClient,
+				);
 				INFOPLIST_FILE = "TestPrismClient/TestPrismClient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/PrismIOS-fhjmuvhmsfuonxcjcphqmmhjhekp/Build/Products/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/TestPrismClient/Debug-iphoneos",
+					"$(PROJECT_DIR)/TestPrismClient/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/TestPrismClient",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,8 +438,23 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestPrismClient/TestPrismClient-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(PROJECT_DIR)/TestPrismClient/PrismIOS/**",
+					/Users/SunSet/Desktop/TestPrismClient/TestPrismClient,
+				);
 				INFOPLIST_FILE = "TestPrismClient/TestPrismClient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/PrismIOS-fhjmuvhmsfuonxcjcphqmmhjhekp/Build/Products/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/TestPrismClient/Debug-iphoneos",
+					"$(PROJECT_DIR)/TestPrismClient/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/TestPrismClient",
+				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

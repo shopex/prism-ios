@@ -59,7 +59,6 @@
 		CBFB283719AF045700F3EA73 /* PrismRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismRequestDelegate.h; sourceTree = "<group>"; };
 		CBFB283819AF046200F3EA73 /* PrismResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrismResponse.h; sourceTree = "<group>"; };
 		CBFB283919AF049100F3EA73 /* libPrismIOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPrismIOS.a; sourceTree = "<group>"; };
-		CBFB287D19AF064C00F3EA73 /* PrismIOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PrismIOS.xcodeproj; path = PrismIOS/PrismIOS.xcodeproj; sourceTree = "<group>"; };
 		CBFB289219AF06AA00F3EA73 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				CBFB289219AF06AA00F3EA73 /* README.md */,
-				CBFB286F19AF064100F3EA73 /* SDK */,
 				CBFB27E619AEE03F00F3EA73 /* PrismIOS */,
 				CBFB276E19AED8C000F3EA73 /* AppDelegate.h */,
 				CBFB276F19AED8C000F3EA73 /* AppDelegate.m */,
@@ -173,14 +171,6 @@
 				CBFB283719AF045700F3EA73 /* PrismRequestDelegate.h */,
 			);
 			name = PrismIOS;
-			sourceTree = "<group>";
-		};
-		CBFB286F19AF064100F3EA73 /* SDK */ = {
-			isa = PBXGroup;
-			children = (
-				CBFB287D19AF064C00F3EA73 /* PrismIOS.xcodeproj */,
-			);
-			name = SDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

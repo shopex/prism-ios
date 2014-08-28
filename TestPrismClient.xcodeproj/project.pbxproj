@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CBFB276019AED8C000F3EA73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB275F19AED8C000F3EA73 /* Foundation.framework */; };
+		CBFB276219AED8C000F3EA73 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB276119AED8C000F3EA73 /* CoreGraphics.framework */; };
+		CBFB276419AED8C000F3EA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB276319AED8C000F3EA73 /* UIKit.framework */; };
+		CBFB276A19AED8C000F3EA73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBFB276819AED8C000F3EA73 /* InfoPlist.strings */; };
+		CBFB276C19AED8C000F3EA73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFB276B19AED8C000F3EA73 /* main.m */; };
+		CBFB277019AED8C000F3EA73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFB276F19AED8C000F3EA73 /* AppDelegate.m */; };
+		CBFB277319AED8C000F3EA73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBFB277119AED8C000F3EA73 /* Main.storyboard */; };
+		CBFB277619AED8C000F3EA73 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFB277519AED8C000F3EA73 /* ViewController.m */; };
+		CBFB277819AED8C000F3EA73 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBFB277719AED8C000F3EA73 /* Images.xcassets */; };
+		CBFB277F19AED8C000F3EA73 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB277E19AED8C000F3EA73 /* XCTest.framework */; };
+		CBFB278019AED8C000F3EA73 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB275F19AED8C000F3EA73 /* Foundation.framework */; };
+		CBFB278119AED8C000F3EA73 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBFB276319AED8C000F3EA73 /* UIKit.framework */; };
+		CBFB278919AED8C000F3EA73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBFB278719AED8C000F3EA73 /* InfoPlist.strings */; };
+		CBFB278B19AED8C000F3EA73 /* TestPrismClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBFB278A19AED8C000F3EA73 /* TestPrismClientTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBFB278219AED8C000F3EA73 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBFB275419AED8C000F3EA73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBFB275B19AED8C000F3EA73;
+			remoteInfo = TestPrismClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CBFB275C19AED8C000F3EA73 /* TestPrismClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestPrismClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFB275F19AED8C000F3EA73 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CBFB276119AED8C000F3EA73 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CBFB276319AED8C000F3EA73 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CBFB276719AED8C000F3EA73 /* TestPrismClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestPrismClient-Info.plist"; sourceTree = "<group>"; };
+		CBFB276919AED8C000F3EA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBFB276B19AED8C000F3EA73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBFB276D19AED8C000F3EA73 /* TestPrismClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestPrismClient-Prefix.pch"; sourceTree = "<group>"; };
+		CBFB276E19AED8C000F3EA73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBFB276F19AED8C000F3EA73 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBFB277219AED8C000F3EA73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CBFB277419AED8C000F3EA73 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CBFB277519AED8C000F3EA73 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CBFB277719AED8C000F3EA73 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBFB277D19AED8C000F3EA73 /* TestPrismClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestPrismClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBFB277E19AED8C000F3EA73 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CBFB278619AED8C000F3EA73 /* TestPrismClientTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TestPrismClientTests-Info.plist"; sourceTree = "<group>"; };
+		CBFB278819AED8C000F3EA73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CBFB278A19AED8C000F3EA73 /* TestPrismClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPrismClientTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBFB275919AED8C000F3EA73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFB276219AED8C000F3EA73 /* CoreGraphics.framework in Frameworks */,
+				CBFB276419AED8C000F3EA73 /* UIKit.framework in Frameworks */,
+				CBFB276019AED8C000F3EA73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFB277A19AED8C000F3EA73 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFB277F19AED8C000F3EA73 /* XCTest.framework in Frameworks */,
+				CBFB278119AED8C000F3EA73 /* UIKit.framework in Frameworks */,
+				CBFB278019AED8C000F3EA73 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CBFB275319AED8C000F3EA73 = {
+			isa = PBXGroup;
+			children = (
+				CBFB276519AED8C000F3EA73 /* TestPrismClient */,
+				CBFB278419AED8C000F3EA73 /* TestPrismClientTests */,
+				CBFB275E19AED8C000F3EA73 /* Frameworks */,
+				CBFB275D19AED8C000F3EA73 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CBFB275D19AED8C000F3EA73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB275C19AED8C000F3EA73 /* TestPrismClient.app */,
+				CBFB277D19AED8C000F3EA73 /* TestPrismClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBFB275E19AED8C000F3EA73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB275F19AED8C000F3EA73 /* Foundation.framework */,
+				CBFB276119AED8C000F3EA73 /* CoreGraphics.framework */,
+				CBFB276319AED8C000F3EA73 /* UIKit.framework */,
+				CBFB277E19AED8C000F3EA73 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBFB276519AED8C000F3EA73 /* TestPrismClient */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB276E19AED8C000F3EA73 /* AppDelegate.h */,
+				CBFB276F19AED8C000F3EA73 /* AppDelegate.m */,
+				CBFB277119AED8C000F3EA73 /* Main.storyboard */,
+				CBFB277419AED8C000F3EA73 /* ViewController.h */,
+				CBFB277519AED8C000F3EA73 /* ViewController.m */,
+				CBFB277719AED8C000F3EA73 /* Images.xcassets */,
+				CBFB276619AED8C000F3EA73 /* Supporting Files */,
+			);
+			path = TestPrismClient;
+			sourceTree = "<group>";
+		};
+		CBFB276619AED8C000F3EA73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB276719AED8C000F3EA73 /* TestPrismClient-Info.plist */,
+				CBFB276819AED8C000F3EA73 /* InfoPlist.strings */,
+				CBFB276B19AED8C000F3EA73 /* main.m */,
+				CBFB276D19AED8C000F3EA73 /* TestPrismClient-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBFB278419AED8C000F3EA73 /* TestPrismClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB278A19AED8C000F3EA73 /* TestPrismClientTests.m */,
+				CBFB278519AED8C000F3EA73 /* Supporting Files */,
+			);
+			path = TestPrismClientTests;
+			sourceTree = "<group>";
+		};
+		CBFB278519AED8C000F3EA73 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBFB278619AED8C000F3EA73 /* TestPrismClientTests-Info.plist */,
+				CBFB278719AED8C000F3EA73 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBFB275B19AED8C000F3EA73 /* TestPrismClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFB278E19AED8C000F3EA73 /* Build configuration list for PBXNativeTarget "TestPrismClient" */;
+			buildPhases = (
+				CBFB275819AED8C000F3EA73 /* Sources */,
+				CBFB275919AED8C000F3EA73 /* Frameworks */,
+				CBFB275A19AED8C000F3EA73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPrismClient;
+			productName = TestPrismClient;
+			productReference = CBFB275C19AED8C000F3EA73 /* TestPrismClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBFB277C19AED8C000F3EA73 /* TestPrismClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBFB279119AED8C000F3EA73 /* Build configuration list for PBXNativeTarget "TestPrismClientTests" */;
+			buildPhases = (
+				CBFB277919AED8C000F3EA73 /* Sources */,
+				CBFB277A19AED8C000F3EA73 /* Frameworks */,
+				CBFB277B19AED8C000F3EA73 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBFB278319AED8C000F3EA73 /* PBXTargetDependency */,
+			);
+			name = TestPrismClientTests;
+			productName = TestPrismClientTests;
+			productReference = CBFB277D19AED8C000F3EA73 /* TestPrismClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBFB275419AED8C000F3EA73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					CBFB277C19AED8C000F3EA73 = {
+						TestTargetID = CBFB275B19AED8C000F3EA73;
+					};
+				};
+			};
+			buildConfigurationList = CBFB275719AED8C000F3EA73 /* Build configuration list for PBXProject "TestPrismClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBFB275319AED8C000F3EA73;
+			productRefGroup = CBFB275D19AED8C000F3EA73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBFB275B19AED8C000F3EA73 /* TestPrismClient */,
+				CBFB277C19AED8C000F3EA73 /* TestPrismClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBFB275A19AED8C000F3EA73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFB277819AED8C000F3EA73 /* Images.xcassets in Resources */,
+				CBFB276A19AED8C000F3EA73 /* InfoPlist.strings in Resources */,
+				CBFB277319AED8C000F3EA73 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFB277B19AED8C000F3EA73 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFB278919AED8C000F3EA73 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBFB275819AED8C000F3EA73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFB277619AED8C000F3EA73 /* ViewController.m in Sources */,
+				CBFB277019AED8C000F3EA73 /* AppDelegate.m in Sources */,
+				CBFB276C19AED8C000F3EA73 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBFB277919AED8C000F3EA73 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBFB278B19AED8C000F3EA73 /* TestPrismClientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBFB278319AED8C000F3EA73 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBFB275B19AED8C000F3EA73 /* TestPrismClient */;
+			targetProxy = CBFB278219AED8C000F3EA73 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBFB276819AED8C000F3EA73 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBFB276919AED8C000F3EA73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CBFB277119AED8C000F3EA73 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBFB277219AED8C000F3EA73 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CBFB278719AED8C000F3EA73 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBFB278819AED8C000F3EA73 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBFB278C19AED8C000F3EA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBFB278D19AED8C000F3EA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBFB278F19AED8C000F3EA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestPrismClient/TestPrismClient-Prefix.pch";
+				INFOPLIST_FILE = "TestPrismClient/TestPrismClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CBFB279019AED8C000F3EA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestPrismClient/TestPrismClient-Prefix.pch";
+				INFOPLIST_FILE = "TestPrismClient/TestPrismClient-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CBFB279219AED8C000F3EA73 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestPrismClient.app/TestPrismClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestPrismClient/TestPrismClient-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "TestPrismClientTests/TestPrismClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CBFB279319AED8C000F3EA73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TestPrismClient.app/TestPrismClient";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestPrismClient/TestPrismClient-Prefix.pch";
+				INFOPLIST_FILE = "TestPrismClientTests/TestPrismClientTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBFB275719AED8C000F3EA73 /* Build configuration list for PBXProject "TestPrismClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFB278C19AED8C000F3EA73 /* Debug */,
+				CBFB278D19AED8C000F3EA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBFB278E19AED8C000F3EA73 /* Build configuration list for PBXNativeTarget "TestPrismClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFB278F19AED8C000F3EA73 /* Debug */,
+				CBFB279019AED8C000F3EA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CBFB279119AED8C000F3EA73 /* Build configuration list for PBXNativeTarget "TestPrismClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBFB279219AED8C000F3EA73 /* Debug */,
+				CBFB279319AED8C000F3EA73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBFB275419AED8C000F3EA73 /* Project object */;
+}
